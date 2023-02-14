@@ -26,15 +26,14 @@ def drawStar(x, y, length):
     t.end_fill()
 
 
+# 绘制矩形
 def drawRect(x, y, width, height):
     t.penup()
     t.goto(x, y)
     t.pendown()
     t.begin_fill()
     for i in range(2):
-        # 位移距离
         t.forward(width)
-        # 右转角度
         t.right(90)
         t.forward(height)
         t.right(90)
