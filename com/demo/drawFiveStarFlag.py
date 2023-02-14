@@ -14,8 +14,9 @@ def drawStar(length):
 
 # 绘制五星红旗
 def drawFlag():
+    t.Screen().title("绘制五星红旗")
     # 国旗宽度，只需要改变这个值，就可以绘制不同尺寸的国旗了，其他值都是通过这个动态计算的
-    width = 720
+    width = t.numinput("红旗宽度", "请输入五星红旗宽度100~1200", 720, 100, 1200)
 
     # 国旗比例：3:2
     height = width / 3 * 2
